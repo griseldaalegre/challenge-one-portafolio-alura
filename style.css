@@ -1,0 +1,588 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root {
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway';
+    margin: auto;
+    padding: 0;
+    line-height: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+
+
+/*Nav*/
+.tudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 152px;
+    justify-content: center;
+    background-color: #F5F5F5;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+
+.menu__header {
+    display: flex;
+    align-items: center;
+}
+
+.menu__header,
+.menu__title {
+    padding: 7px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.logo {
+    Width: 16px;
+    Height: 16px;
+    Top: 4px;
+    Left: 1px;
+}
+
+.menu__list {
+    display: flex;
+
+}
+
+.menu__list ol,
+.menu__list ul,
+.menu__list li {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.menu__list a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--cor-de-link);
+    margin: 0 0 0 19px;
+}
+
+/*Sección del Header/Title/Hero*/
+
+.title {
+    width: 85%;
+    justify-content: center;
+    display: flex;
+    margin-top: 2%;
+}
+
+.title__div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.title__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 17px;
+}
+
+.title__bio {
+    font-family: Raleway;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0 0 24px 0;
+}
+
+.title__subsection {
+    font-family: Raleway;
+    line-height: 26px;
+    font-weight: 100;
+    margin: 0 0 26px 0;
+
+}
+
+.title__network {
+    display: flex;
+    padding: 0;
+}
+.title__network ul
+{
+    display: flex;
+    padding: 0;
+}
+
+.title__network li {
+    margin-right: 32px;
+    list-style: none;
+}
+
+.title__network a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*SOBRE MI*/
+
+.about {
+    display: flex;
+    background-color: rgb(234 242 253);
+    justify-content: center;
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 85%;
+    padding-bottom: 64px;
+    padding-top: 64px;
+}
+
+.about__title{
+    margin: 0 0 16px 0;
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.about__container .about__paragraph {
+    display: flex;
+    width: 65%;
+    flex-flow: column;
+    margin-top: 0px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #464646;
+}
+
+/*SKILS*/
+.skills, .hobbies {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.skills__title,
+.hobbies__title {
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 64px;
+    text-align: center;
+    padding: 2%;
+}
+
+.skills__line, .hobbies__line{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.skills__box ul, .hobbies__box ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+
+}
+.skills__box ul li, .hobbies__box ul li{
+    padding-bottom: 8px;
+}
+
+
+
+.skills__box, .hobbies__box {
+    background-color: white;
+    width: 176px;
+    height: 174px;
+    height: 174px;
+    width: 176px;
+    left: 384px;
+    top: 0px;
+    border-radius: 0px;
+    padding: 16px;
+    margin-right: 32px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+}
+
+.academic {
+    display: flex;
+    flex-direction: column;
+    background: aquamarine;
+    height: 581px;
+}
+
+
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+}
+
+
+.academic__title {
+
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.academic__courses {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.academic__courses__box {
+    display: flex;
+   
+    align-items: center;
+    width: 368px;
+    border-radius: 0px;  
+    background-color:white;
+}
+
+
+.academic__courses__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 286px;
+    width: 320px;
+    padding: 16px;
+    background-color: blue;
+
+}
+
+.academic__courses__item__img {
+    height: 130px;
+width: 192px;
+left: 88px;
+top: 78px;
+border-radius: 0px;
+
+}
+
+
+
+/*
+.hobbies .hobbies__line {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.skills__title,
+.hobbies__title {
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 64px;
+
+    text-align: center;
+    padding: 2%;
+}
+
+.skills__box,
+.hobbies__box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 174px;
+    width: 176px;
+    background-color: white;
+}
+
+.academic {
+    display: flex;
+    flex-direction: column;
+    background: aquamarine;
+    height: 581px;
+}
+
+hoja de estilo del usuario-agente section {
+    display: block;
+}
+
+
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+}
+
+
+.academic__title {
+
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.academic__courses {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.academic__courses__box {
+    display: flex;
+   
+    align-items: center;
+    width: 368px;
+    border-radius: 0px;  
+    background-color:white;
+}
+
+
+.academic__courses__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 286px;
+    width: 320px;
+    padding: 16px;
+    background-color: blue;
+
+}
+
+.academic__courses__item__img {
+    height: 130px;
+width: 192px;
+left: 88px;
+top: 78px;
+border-radius: 0px;
+
+}
+
+
+
+/*
+
+
+
+
+.title__subsection {
+    font-family: Raleway;
+    line-height: 26px;
+    font-weight: 100;
+
+}
+
+.title__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title__container .title__network {
+    display: flex;
+    justify-content: flex-start;
+    width: 75%;
+    align-items: center;
+}
+
+.about .about__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 1%;
+}
+
+.skills .skills__line,
+.hobbies .hobbies__line {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.skills__title,
+.hobbies__title {
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 64px;
+
+    text-align: center;
+    padding: 2%;
+}
+
+.skills__box,
+.hobbies__box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 174px;
+    width: 176px;
+    background-color: white;
+
+}
+
+.academic {
+    display: flex;
+    flex-direction: column;
+    background: aquamarine;
+    height: 581px;
+
+
+}
+
+hoja de estilo del usuario-agente section {
+    display: block;
+}
+
+
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+}
+
+
+.academic__title {
+
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.academic__courses {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.academic__courses__box {
+    display: flex;
+   
+    align-items: center;
+    width: 368px;
+    border-radius: 0px;  
+    background-color:white;
+}
+
+
+.academic__courses__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 286px;
+    width: 320px;
+    padding: 16px;
+    background-color: blue;
+
+}
+
+.academic__courses__item__img {
+    height: 130px;
+width: 192px;
+left: 88px;
+top: 78px;
+border-radius: 0px;
+
+}*/
+
+
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo 
+
+
+Tablet
+@media (min-width: 768px) {
+
+     Menú 
+
+    /*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica
+
+    /*Experiencia Profesional
+
+}
+Mobile
+@media (min-width: 425px) {
+
+    /*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+/*Contacto*/
+
+/*Footer*/
