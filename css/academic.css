@@ -1,0 +1,129 @@
+.academic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    gap: 32px;
+    margin-top: 10%;
+
+    background-color: #EAF2FD;
+
+}
+
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+}
+
+.academic__title {
+    padding: 32px;
+}
+
+.academic__courses {
+    display: flex;
+    flex-direction: row;
+}
+
+.academic__courses__box {
+    display: flex;
+    background-color: #EAF2FD;
+}
+
+
+.academic__courses__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: inherit;
+    list-style: none;
+    width: 100%;
+    background-color: #EAF2FD;
+    padding: 0px;
+
+}
+
+
+.academic__courses__item__img {
+    width: 340px;
+    height: 286px;
+    /* width: 340px; */
+    /* height: 200px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: 16px; */
+    /* gap: 10px; */
+    background-color: white;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .academic {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .academic__title {
+        padding: 0;
+    }
+
+    .academic__courses__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* gap: 10px; */
+        width: 224px;
+    }
+
+    .academic__courses__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .academic__courses__item__img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        background-color: white;
+        width: 83%;
+        height: 118px;
+    }
+
+    .academic__courses__item__img img {
+        width: 70px;
+        height: 48px;
+    }
+
+    .academic__courses__item__title {
+        gap: 0;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #464646;
+    }
+
+    .academic__courses__item__subtitle {
+     
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #464646;
+    }
+
+
+}

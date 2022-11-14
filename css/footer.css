@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+.footer__rodape{
+width: 229px;
+height: 38px;
+padding: 32px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: #464646;
+}
+@media (max-width: 768px) {  
+ 
+
+} 

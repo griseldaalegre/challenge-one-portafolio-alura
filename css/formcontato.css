@@ -1,0 +1,120 @@
+.formcontato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px;
+    /* gap: 10px; */
+    
+    height: 788px;
+    background: #EAF2FD;
+}
+
+.formcontato__contacto {
+    display: flex;
+    display: flex;
+    background-color: #EAF2FD;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    gap: 16px;
+
+}
+
+
+.form__text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.formcontato__title {
+    display: flex;
+    height: 38px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 0px;
+    color: #464646;
+
+}
+
+.formcontato__subtext {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #464646;
+    margin: 0px;
+    line-height: 0px;
+}
+
+.formcontato__subsubtext{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #464646;
+    padding: 0;
+  
+    margin-bottom: 4%;
+}
+
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.formcontato__input {
+    width: 656px;
+    height: 35px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.textarea--mensaje {
+    width: 656px;
+    height: 133px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    flex: none;
+}
+
+.formcontato__botao {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    width: 144px;
+    height: 51px;
+    background: #2A7AE4;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+
+}
+
+/*Mobile*/
+
+
+
+@media (max-width: 768px) {  
+    .formcontato {
+    display: flex;
+    
+    }
+    .formcontato--esquerda,.formcontato__img{
+        display: none;
+    }
+
+
+} 
