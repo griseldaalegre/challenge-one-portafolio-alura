@@ -11,6 +11,11 @@
     align-items: center;
     margin-bottom: 32px;
 }
+.title__profile{
+    width: 368px;
+    height: 368px;
+    border-radius: 50%;
+}
 
 .title__container {
     display: flex;

@@ -1,0 +1,49 @@
+.formulario {
+    margin-top: 2rem;
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  
+  .input-message-error {
+    display: none;
+  }
+  
+  .input-container--invalid .input-message-error {
+    color: red;
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  
+  .textarea-error {
+    box-sizing: border-box;
+    border: 1px solid red;
+    padding: 0.5rem;
+    border-radius: 7px;
+    width: 100%;
+    min-height: 3rem;
+  
+  }
+  
+  .textarea:focus {
+    outline: none;
+  }
+ 
+  .textarea-container--invalid .textarea {
+    color: red;
+    border: 1px solid red;
+  }
+  
+  .textarea-mensagem-erro {
+    display: none;
+  }
+  
+  .textarea-container--invalid .textarea-mensagem-erro {
+    display: block;
+    color: red;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  

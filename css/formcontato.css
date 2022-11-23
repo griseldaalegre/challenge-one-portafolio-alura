@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 14px;
-    /* gap: 10px; */
-
-    height: 788px;
-    background: #EAF2FD;
+    width: 100%;
+    height: 50%;
+    gap: 32px;
+    margin-top: 10%;
+    background-color: #EAF2FD;
 }
 
 .formcontato__contacto {
@@ -38,7 +38,6 @@
     font-size: 35px;
     line-height: 0px;
     color: #464646;
-
 }
 
 .formcontato__subtext {
@@ -58,14 +57,13 @@
     font-size: 16px;
     color: #464646;
     padding: 0;
-
     margin-bottom: 4%;
 }
 
 .formcontato__form {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
 }
 
 .formcontato__input {
@@ -79,6 +77,11 @@
     flex-grow: 0;
 }
 
+.formcontato__input--error {
+    border: 1px solid red;
+}
+
+
 .textarea--mensaje {
     width: 656px;
     height: 133px;
@@ -89,21 +92,18 @@
 
 .formcontato__botao {
     display: flex;
-
     justify-content: center;
     align-items: center;
     width: 144px;
     height: 51px;
     background: #2A7AE4;
-
     font-family: 'Raleway';
     font-style: normal;
     font-size: 16px;
     color: #FFFFFF;
+    cursor: pointer;
 
 }
-
-
 
 
 @media (max-width: 768px) {
@@ -138,15 +138,17 @@
         align-items: flex-start;
         padding: 0px;
     }
-    .formcontato__text{
+
+    .formcontato__text {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .form__text {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        width: 296px;
     }
 
     .formcontato__title {
@@ -167,28 +169,25 @@
         line-height: 19px;
         color: #464646;
     }
-    .formcontato__form{
+
+    .formcontato__form {
         display: flex;
-flex-direction: column;
-align-items: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .formcontato__input{
+
+    .formcontato__input {
         width: 296px;
-height: 56px;
-
-/* Preto/branco */
-
-background: #FFFFFF;
-border-radius: 4px;
+        height: 56px;
+        background: #FFFFFF;
+        border-radius: 4px;
     }
-    .textarea--mensaje{
+
+    .textarea--mensaje {
         width: 296px;
-height: 133px;
-
-/* Preto/branco */
-
-background: #FFFFFF;
-border-radius: 4px;
+        height: 133px;
+        background: #FFFFFF;
+        border-radius: 4px;
 
     }
 
