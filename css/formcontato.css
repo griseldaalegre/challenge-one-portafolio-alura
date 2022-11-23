@@ -4,7 +4,7 @@
     align-items: center;
     padding: 14px;
     /* gap: 10px; */
-    
+
     height: 788px;
     background: #EAF2FD;
 }
@@ -23,7 +23,7 @@
 }
 
 
-.form__text{
+.form__text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -51,14 +51,14 @@
     line-height: 0px;
 }
 
-.formcontato__subsubtext{
+.formcontato__subsubtext {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     color: #464646;
     padding: 0;
-  
+
     margin-bottom: 4%;
 }
 
@@ -103,18 +103,93 @@
 
 }
 
-/*Mobile*/
 
 
 
-@media (max-width: 768px) {  
+@media (max-width: 768px) {
     .formcontato {
-    display: flex;
-    
+        display: flex;
+
     }
-    .formcontato--esquerda,.formcontato__img{
+
+    .formcontato--esquerda,
+    .formcontato__img {
         display: none;
     }
 
 
-} 
+}
+
+/*Mobile*/
+@media (max-width: 425px) {
+    .formcontato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formcontato__img {
+        display: none;
+    }
+
+    .formcontato__contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+    }
+    .formcontato__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form__text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .formcontato__title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        color: #464646;
+    }
+
+    .formcontato__subtext,
+    .formcontato__subsubtext {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #464646;
+    }
+    .formcontato__form{
+        display: flex;
+flex-direction: column;
+align-items: flex-start;
+    }
+    .formcontato__input{
+        width: 296px;
+height: 56px;
+
+/* Preto/branco */
+
+background: #FFFFFF;
+border-radius: 4px;
+    }
+    .textarea--mensaje{
+        width: 296px;
+height: 133px;
+
+/* Preto/branco */
+
+background: #FFFFFF;
+border-radius: 4px;
+
+    }
+
+}

@@ -18,7 +18,17 @@ line-height: 19px;
 text-align: center;
 color: #464646;
 }
+
+
+
 @media (max-width: 768px) {  
- 
+    .footer {
+        display: flex;
+    }
 
 } 
+@media (max-width: 425px) {
+    .footer {
+        display: flex;
+    }
+}

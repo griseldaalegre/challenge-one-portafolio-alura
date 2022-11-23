@@ -49,6 +49,7 @@
 }
 
 
+
 @media (max-width: 768px) {
     .menu {
         display: flex;
@@ -85,5 +86,21 @@
     line-height: 19px;
     }
 
+}
+@media (max-width: 425px) {
+    .menu  {
+        display: flex;
+    }
+    .item_contacto{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        
+        /* Preto/100% */
+        
+        color: #464646;
+    }
 }
 

@@ -99,13 +99,13 @@
     width: 105px;
     height: 51px;
     background: #2A7AE4;
+    color: #FFFFFF;
 }
 
 .experience__description {
     display: flex;
     gap: 15px;
 }
-
 
 
 
@@ -177,6 +177,7 @@
         width: 108px;
         height: 40px;
     }
+
     .experience__botao--demo {
         display: flex;
         flex-direction: row;
@@ -187,6 +188,7 @@
         width: 108px;
         height: 40px;
     }
+
     .experience__box__encriptador {
         /*box del anteultimo encriptador*/
         display: flex;
@@ -194,7 +196,7 @@
         justify-content: flex-start;
         align-items: start;
     }
-    
+
     .box-ahorcado {
         /*box ultimo ahorcado*/
         display: flex;
@@ -203,5 +205,55 @@
         align-items: start;
     }
 
+
+}
+
+@media (max-width: 425px) {
+    .experience {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience__section__title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        color: #464646;
+    }
+
+    .experiencie__box {
+        display: flex;
+        flex-direction: column;
+
+        padding: 0px;
+    }
+
+    .experience__img {
+        width: 296px;
+        height: 144px;
+    }
+
+    .experience__title {
+        color: #464646;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+
+    }
+
+    .experience__text {
+        color: #464646;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+    }
 
 }
